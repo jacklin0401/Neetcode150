@@ -17,17 +17,21 @@ Explanation: After considering only alphanumerical characters we have "wasitacar
 
 
 **Example 1:**
-
+```
 Input: s = "tab a cat"
 
 Output: false
+```
 
 Explanation: "tabacat" is not a palindrome.
 
 **Constraints:**
 
+```
+
     - 1 <= s.length <= 1000
     - s is made up of only printable ASCII characters.
+```
 
 ## Solution:
 
@@ -44,6 +48,5 @@ class Solution:
             if i.isalnum():
                 newStr += i.lower()
         return newStr == newStr[::-1]
-
 
 ```
